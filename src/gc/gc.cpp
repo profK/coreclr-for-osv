@@ -34299,7 +34299,7 @@ HRESULT GCHeap::Initialize()
     {
         seg_size = gc_heap::get_segment_size_hard_limit (&nhp, (nhp_from_config == 0));
         gc_heap::soh_segment_size = seg_size;
-        large_seg_size = seg_size * 2;
+        large_seg_size = seg_size;
     }
     else
     {
